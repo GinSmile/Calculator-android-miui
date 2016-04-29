@@ -8,9 +8,10 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    public String expression = "";
-    EditText text1;//第一行，用来显示按过等号之后的完整表达式
-    EditText text2;//第二行，用来显示表达式和结果
+    private String expression = "";
+    private boolean last_equal = true;//上一个按键是否为等号
+    private EditText text1;//第一行，用来显示按过等号之后的完整表达式
+    private EditText text2;//第二行，用来显示表达式和结果
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public String calculate(String expression){
-
-        return "0.00";
-    }
 
     //初始化
-    public void init(final Button[] buttons){
+    private void init(final Button[] buttons){
         buttons[0] = (Button)findViewById(R.id.zero);
         buttons[1] = (Button)findViewById(R.id.one);
         buttons[2] = (Button)findViewById(R.id.two);
@@ -54,90 +51,27 @@ public class MainActivity extends AppCompatActivity {
 
 
         //添加监听事件
-        buttons[0].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "0";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[1].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "1";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[2].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "2";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[3].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "3";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[4].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "4";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[5].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "5";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[6].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "6";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[7].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "7";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[8].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "8";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
-        buttons[9].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                expression += "9";
-                text2.setText(expression);
-                text2.setSelection(expression.length());
-            }
-        });
+        //数字0～9
+        for(int i = 0; i < 10; i++){
+            final int m = i;
+            buttons[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(last_equal){
+                        expression = "";//这次按的数字，如果上次按了等号，则清空表达式
+                        last_equal = false;
+                    }
+                    expression += buttons[m].getText();
+                    text2.setText(expression);
+                    text2.setSelection(expression.length());
+                }
+            });
+        }
         //empty
         buttons[10].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                last_equal = false;
                 expression = "";
                 text2.setText("0");
                 text1.setText(null);
@@ -147,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         buttons[11].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                last_equal = false;
                 if(expression.length() < 1){
                     return;
                 }
@@ -155,33 +90,42 @@ public class MainActivity extends AppCompatActivity {
                 text2.setSelection(expression.length());
             }
         });
+        //divide
         buttons[12].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                expression += buttons[12].getText();
+                last_equal = false;
+                if(expression.length() > 0)
+                expression += "/";
                 text2.setText(expression);
                 text2.setSelection(expression.length());
             }
         });
+        //mutiple
         buttons[13].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                expression += buttons[13].getText();
+                last_equal = false;
+                expression += "*";
                 text2.setText(expression);
                 text2.setSelection(expression.length());
             }
         });
+        //minus
         buttons[14].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                last_equal = false;
                 expression += buttons[14].getText();
                 text2.setText(expression);
                 text2.setSelection(expression.length());
             }
         });
+        //plus
         buttons[15].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                last_equal = false;
                 expression += buttons[15].getText();
                 text2.setText(expression);
                 text2.setSelection(expression.length());
@@ -191,15 +135,26 @@ public class MainActivity extends AppCompatActivity {
         buttons[16].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(last_equal) return;//如果上次还是按的等号，那么什么也不做
                 text1.setText(expression + "=");
                 text1.setSelection(expression.length()+1);//在第一行显示计算表达式
-                expression = calculate(expression);
+                try{
+                    expression = Calculator.calculate(expression);
+                }catch(Exception exception){
+                    expression = "表达式错误!";
+                }
                 text2.setText(expression);//在第二行显示计算结果
+
+                // 为下一次按计算器键盘做准备。
+                // 如果下次按的是数字，那么清空第二行重新输入第一个数。
+                // 如果是非数字，那就当这次的结果是输入的第一个数，直接参与运算。
+                last_equal = true;
             }
         });
         buttons[17].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                last_equal = false;
                 expression += buttons[17].getText();
                 text2.setText(expression);
                 text2.setSelection(expression.length());
@@ -213,6 +168,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+    public String calculate(String expression){
+
+        return "0.00";
+    }
+
+
+    //判断最后一个字符是否是数字，
+    public static boolean isInteger(char c){
+        return false;
+    }
 
 }
 
