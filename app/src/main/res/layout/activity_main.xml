@@ -29,6 +29,7 @@
             android:background="@null"
             android:singleLine="true"
             android:text=""
+            android:textColor="@color/expression"
             android:textSize="@dimen/editMedium"/>
 
         <EditText

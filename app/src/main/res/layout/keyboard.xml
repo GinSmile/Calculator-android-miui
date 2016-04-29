@@ -109,7 +109,7 @@
         app:layout_rowWeight="1"
         app:layout_rowSpan="2"
         app:layout_gravity="fill"
-        android:background="@color/keyImp"
+        android:background="@drawable/keyboard_equal"
         android:text="="/>
 
 

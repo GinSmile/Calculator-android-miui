@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * Created by xujin on 16/04/29.
  */
-public class Calculator {
+public class Calculate {
 
     //使用后缀 表达式来计算原表达式的值，得到double类型的结果。
     public static String calculate(String exp) throws Exception {
