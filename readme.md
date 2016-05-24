@@ -13,4 +13,9 @@
 其他：
 
 * 键盘界面仿的小米计算器，使用GridLayout，由于此布局的某些属性要在android 5.0之后才有，所以使用了v7包。
-* 最上面的表达式和结果显示的两个EditText使用右对齐，注意在每次输入的时候都要setSelection，即：`text2.setSelection(expression.length());`来确保始终会显示最新输入的字符。
+* 最上面的表达式和结果显示的两个EditText使用右对齐，注意在每次输入的时候都要setSelection，即：`text2.setSelection(expression.length());`来确保始终会显示最新输入的字符。 
+
+
+![s1](./screenshot/simple.png)
+
+
