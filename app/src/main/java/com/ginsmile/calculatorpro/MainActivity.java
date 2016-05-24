@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean last_equal = false;//上一次的按键是否为等号
     private EditText text1;//第一行，用来显示按过等号之后的完整表达式
     private EditText text2;//第二行，用来显示表达式和结果
-    private static boolean isSimple = true; //当前是否是简易计算器
+    private static boolean isSimple = true;//当前是否是简易计算器
 
     private View board;
     private View board2;
@@ -40,13 +40,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //为了得到用户区域的高度，重写onWindowFocusChanged
+    //为了得到用户区域的高度，重写onWindowFocusChanged,这个方法在onResume之后被调用
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         if(hasFocus){
-            System.out.println("second");
-            StringBuilder sb = new StringBuilder();
             Dimension dimen1 = getAreaOne(this);
             Dimension dimen2 = getAreaTwo(this);
             Dimension dimen3 = getAreaThree(this);
@@ -64,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     //初始化
     private void init(){
+        isSimple = true;
         //初始化change按钮和显示区域
         //设置这一区域的高度始终为用户区域高度的三分之一
         display  = (LinearLayout)findViewById(R.id.display);
@@ -189,6 +188,126 @@ public class MainActivity extends AppCompatActivity {
         buttons[27] = (Button)findViewById(R.id.left_parentheses);
         buttons[28] = (Button)findViewById(R.id.right_parentheses);
         buttons[29] = (Button)findViewById(R.id.e);
+
+        buttons[18].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[18].getText() + "(";
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[19].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[19].getText() + "(";
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[20].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[20].getText() + "(";
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[21].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[21].getText() + "(";
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[22].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[22].getText() + "(";
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[23].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[23].getText();
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[24].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[24].getText();
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[25].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[25].getText();
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[26].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[26].getText();
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[27].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[27].getText();
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[28].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[28].getText();
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+        buttons[29].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                expression += buttons[29].getText();
+                text2.setText(expression);
+                text2.setSelection(expression.length());
+                last_equal = false;
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
 
         //让每个按钮的高度为tablelayout的1/6
         for(int i = 0; i < buttons.length; i++){

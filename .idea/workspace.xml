@@ -45,22 +45,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de11905a-0895-4cd2-8392-d0f6d4881674" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/change_btn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/change_btn_normal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/change_btn_pressed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/keyboard2.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshot/simple.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_3_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/Calculate.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/Calculate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/keyboard.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/keyboard.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="calculatorPro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,38 +69,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="keyboard2.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/keyboard2.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="76.458336">
-              <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+      <file leaf-file-name="Calculate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/Calculate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
-                <element signature="e#403#551#0" expanded="false" />
+                <element signature="method#getPostOrder#0;class#Calculate#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.811321">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.9590644">
+              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
               <folding>
-                <element signature="e#963#1351#0" expanded="false" />
-                <element signature="e#1179#1207#0" expanded="true" />
-                <element signature="e#1361#2858#0" expanded="false" />
-                <element signature="e#1633#1666#0" expanded="true" />
-                <element signature="e#1699#1734#0" expanded="true" />
-                <element signature="e#1768#1803#0" expanded="true" />
-                <element signature="e#2335#2354#0" expanded="true" />
-                <element signature="e#2815#2831#0" expanded="true" />
+                <element signature="method#onWindowFocusChanged#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#initSimpleBoard#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#getAreaOne#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#getAreaTwo#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#getAreaThree#0;class#MainActivity#0" expanded="false" />
+                <element signature="class#Dimension#0;class#MainActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1705,13 +1685,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/change_btn.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/change_btn_pressed.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/change_btn_normal.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/keyboard3.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/keyboard.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/keyboard2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/Calculate.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -1803,24 +1784,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calculatorPro" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2177,7 +2140,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45053273" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17656012" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -2238,14 +2201,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27272728">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/change_btn.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12396694">
@@ -2261,14 +2216,6 @@
           <folding>
             <element signature="e#154#176#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07785467">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2304,14 +2251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15424165">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/keyboard.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2326,26 +2265,6 @@
             <element signature="e#1540#2074#0" expanded="false" />
             <element signature="e#2087#2758#0" expanded="false" />
             <element signature="e#2771#3272#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.811321">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#963#1351#0" expanded="false" />
-            <element signature="e#1179#1207#0" expanded="true" />
-            <element signature="e#1361#2858#0" expanded="false" />
-            <element signature="e#1633#1666#0" expanded="true" />
-            <element signature="e#1699#1734#0" expanded="true" />
-            <element signature="e#1768#1803#0" expanded="true" />
-            <element signature="e#2335#2354#0" expanded="true" />
-            <element signature="e#2815#2831#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2366,26 +2285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36036035">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="method#onWindowFocusChanged#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#init#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#initSimpleBoard#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#initScienceBoard#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#initCommonBtns#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#8231#8489#0" expanded="true" />
-            <element signature="e#8488#8489#0" expanded="true" />
-            <element signature="method#getAreaOne#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getAreaTwo#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getAreaThree#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#Dimension#0;class#MainActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/keyboard2.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -2395,6 +2294,69 @@
           <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
           <folding>
             <element signature="e#403#551#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09202454">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19480519">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33742332">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2173913">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#963#1351#0" expanded="false" />
+            <element signature="e#1361#2858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/Calculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="method#getPostOrder#0;class#Calculate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ginsmile/calculatorpro/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9590644">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+          <folding>
+            <element signature="method#onWindowFocusChanged#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initSimpleBoard#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getAreaOne#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getAreaTwo#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getAreaThree#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#Dimension#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>

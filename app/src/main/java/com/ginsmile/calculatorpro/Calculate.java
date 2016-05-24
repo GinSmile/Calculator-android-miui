@@ -13,7 +13,7 @@ public class Calculate {
         ArrayList<String> inOrderExp = getStringList(exp);  //String转换为List,得到中缀表达式
         ArrayList<String> postOrderExp = getPostOrder(inOrderExp);
         double res = calPostOrderExp(postOrderExp);
-        if(res == Math.floor(res)) return (long)res+"";//整数的时候输出不要加小树
+        if(res == Math.floor(res)) return (long)res+"";//当结果是整数的时候，输出不要加小数点
         return res+"";
     }
 
