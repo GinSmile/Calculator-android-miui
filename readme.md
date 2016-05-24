@@ -27,11 +27,11 @@
 * 用户区域，高度为去除状态栏和标题栏的高度
 
 
-<img src="./screenshot/simple1.png" width = "240" height = "430" alt="simple" align=left />
-
-_<img src="./screenshot/simple2.png" width = "240" height = "430" alt="simple2" />
+<img src="./screenshot/simple1.png" width = "240" height = "430" alt="simple"/>
+ <img src="./screenshot/simple2.png" width = "240" height = "430" alt="simple2" />
             
 <img src="./screenshot/simple3.png" width = "240" height = "430" alt="simple2" />
+<img src="./screenshot/anime.gif" height="430" alt="simple2" />
 
 
 
