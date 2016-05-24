@@ -16,6 +16,13 @@
 * 最上面的表达式和结果显示的两个EditText使用右对齐，注意在每次输入的时候都要setSelection，即：`text2.setSelection(expression.length());`来确保始终会显示最新输入的字符。 
 
 
-![s1](./screenshot/simple.png)
+<img src="./screenshot/simple1.png" width = "240" height = "430" alt="simple" align=left />
+
+_<img src="./screenshot/simple2.png" width = "240" height = "430" alt="simple2" />
+
+      
+      
+<img src="./screenshot/simple3.png" width = "240" height = "430" alt="simple2" />
+
 
 

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+    <Button
+        android:id="@+id/factorial"
+        android:text="!"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/power"
+        android:text="^"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/sqrt"
+        android:text="√"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/pi"
+        android:text="π"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/empty2"
+        android:text="C"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    </TableRow>
+
+    <TableRow>
+    <Button
+        android:id="@+id/sin"
+        android:text="sin"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/left_parentheses"
+        android:text="("
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/right_parentheses"
+        android:text=")"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/e"
+        android:text="e"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/delete2"
+        android:text="←"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    </TableRow>
+
+    <TableRow>
+    <Button
+        android:id="@+id/cos"
+        android:text="cos"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/seven2"
+        android:text="7"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    <Button
+        android:id="@+id/eight2"
+        android:text="8"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    <Button
+        android:id="@+id/nine2"
+        android:text="9"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/divide2"
+        android:text="/"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    </TableRow>
+
+    <TableRow>
+    <Button
+        android:id="@+id/tan"
+        android:text="tan"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+
+    <Button
+        android:id="@+id/four2"
+        android:background="@drawable/keyboard"
+        android:layout_weight="1"
+        android:text="4" />
+    <Button
+        android:id="@+id/five2"
+        android:text="5"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    <Button
+        android:id="@+id/six2"
+        android:text="6"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    <Button
+        android:id="@+id/multiple2"
+        android:text="*"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    </TableRow>
+
+    <TableRow>
+    <Button
+        android:id="@+id/ln"
+        android:text="ln"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    <Button
+        android:id="@+id/one2"
+        android:text="1"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    <Button
+        android:id="@+id/two2"
+        android:text="2"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard"/>
+    <Button
+        android:id="@+id/three2"
+        android:text="3"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    <Button
+        android:id="@+id/minus2"
+        android:text="-"
+        android:layout_weight="1"
+        android:background="@drawable/keyboard" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/log"
+            android:text="log"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard" />
+
+        <Button
+            android:id="@+id/zero2"
+            android:text="0"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard"/>
+        <Button
+            android:id="@+id/dot2"
+            android:text="."
+            android:layout_weight="1"
+            android:background="@drawable/keyboard"/>
+        <Button
+            android:id="@+id/equal2"
+            android:background="@drawable/keyboard_equal"
+            android:layout_weight="1"
+            android:text="="
+            />
+
+        <Button
+            android:id="@+id/plus2"
+            android:background="@drawable/keyboard_normal"
+            android:layout_weight="1"
+            android:text="+"/>
+
+    </TableRow>
+
+
+
+
+
+</TableLayout>

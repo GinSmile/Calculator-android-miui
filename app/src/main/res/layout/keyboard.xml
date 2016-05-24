@@ -1,132 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.GridLayout
+<TableLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/keyboard"
+    android:id="@+id/table"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:rowCount="5"
-    app:columnCount="4">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/empty"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="C"
-        android:textColor="@color/keyImp"
-        android:background="@drawable/keyboard"/>
-    <Button
-        android:id="@+id/delete"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="←"
-        android:background="@drawable/keyboard"/>
-    <Button
-        android:id="@+id/divide"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="/"
-        android:background="@drawable/keyboard" />
-    <Button
-        android:id="@+id/multiple"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="*"
-        android:background="@drawable/keyboard" />
+    <TableRow>
 
-    <Button
-        android:id="@+id/seven"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="7"
-        android:background="@drawable/keyboard" />
-    <Button
-        android:id="@+id/eight"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="8"
-        android:background="@drawable/keyboard" />
-    <Button
-        android:id="@+id/nine"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="9"
-        android:background="@drawable/keyboard"/>
-    <Button
-        android:id="@+id/minus"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="-"
-        android:background="@drawable/keyboard" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TableRow>
+                <Button
+                    android:id="@+id/empty"
+                    android:text="C"
+                    android:textColor="@color/keyImp"
+                    android:background="@drawable/keyboard"/>
+                <Button
+                    android:id="@+id/delete"
+                    android:text="←"
+                    android:background="@drawable/keyboard"/>
+                <Button
+                    android:id="@+id/divide"
+                    android:text="/"
+                    android:background="@drawable/keyboard" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/seven"
+                    android:text="7"
+                    android:background="@drawable/keyboard" />
+                <Button
+                    android:id="@+id/eight"
+                    android:text="8"
+                    android:background="@drawable/keyboard" />
+                <Button
+                    android:id="@+id/nine"
+                    android:text="9"
+                    android:background="@drawable/keyboard"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/four"
+                    android:background="@drawable/keyboard"
+                    android:text="4" />
+                <Button
+                    android:id="@+id/five"
+                    android:text="5"
+                    android:background="@drawable/keyboard" />
+                <Button
+                    android:id="@+id/six"
+                    android:text="6"
+                    android:background="@drawable/keyboard" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/one"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:background="@drawable/keyboard" />
+                <Button
+                    android:id="@+id/two"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:background="@drawable/keyboard"/>
+                <Button
+                    android:id="@+id/three"
+                    android:layout_weight="1"
+                    android:text="3"
+                    android:background="@drawable/keyboard" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/zero"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:layout_span="2"
+                    android:background="@drawable/keyboard"/>
+                <Button
+                    android:id="@+id/dot"
+                    android:layout_weight="1"
+                    android:text="."
+                    android:background="@drawable/keyboard"/>
+            </TableRow>
+        </TableLayout>
 
-    <Button
-        android:id="@+id/four"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:background="@drawable/keyboard"
-        android:text="4" />
-    <Button
-        android:id="@+id/five"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="5"
-        android:background="@drawable/keyboard" />
-    <Button
-        android:id="@+id/six"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="6"
-        android:background="@drawable/keyboard" />
-    <Button
-        android:id="@+id/plus"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="+"
-        android:background="@drawable/keyboard"/>
-
-
-    <Button
-        android:id="@+id/one"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="1"
-        android:background="@drawable/keyboard" />
-    <Button
-        android:id="@+id/two"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="2"
-        android:background="@drawable/keyboard"/>
-    <Button
-        android:id="@+id/three"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="3"
-        android:background="@drawable/keyboard" />
-    <Button
-        android:id="@+id/equal"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        app:layout_rowSpan="2"
-        app:layout_gravity="fill"
-        android:background="@drawable/keyboard_equal"
-        android:text="="/>
+        <TableLayout>
+            <TableRow>
+                <Button
+                    android:id="@+id/multiple"
+                    android:text="*"
+                    android:background="@drawable/keyboard" />
+            </TableRow>
 
 
+            <TableRow>
+                <Button
+                    android:id="@+id/minus"
+                    android:text="-"
+                    android:background="@drawable/keyboard" />
+            </TableRow>
 
-    <Button
-        android:id="@+id/zero"
-        app:layout_columnSpan="2"
-        app:layout_gravity="fill"
-        android:text="0"
-        android:background="@drawable/keyboard"/>
-    <Button
-        android:id="@+id/dot"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-        android:text="."
-        android:background="@drawable/keyboard"/>
+            <TableRow>
+                <Button
+                    android:id="@+id/plus"
+                    android:text="+"
+                    android:background="@drawable/keyboard"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/equal"
+                    android:background="@drawable/keyboard_equal"
+                    android:text="="/>
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
 
 
 
-</android.support.v7.widget.GridLayout>
+
+
+
+
+</TableLayout>

@@ -9,5 +9,9 @@
 
     <dimen name="line_width">0.1dp</dimen>
 
+    <dimen name="change_width">40dp</dimen>
+    <dimen name="change_right_margin">3dp</dimen>
+    <dimen name="change_radius">16dp</dimen>
+
 
 </resources>
