@@ -98,18 +98,17 @@ public class MainActivity extends AppCompatActivity {
         buttons[12].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(expression.length() > 0)
-                expression += "/";
+                expression += buttons[12].getText();
                 text2.setText(expression);
                 text2.setSelection(expression.length());
                 last_equal = false;
             }
         });
-        //mutiple
+        //multiple
         buttons[13].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                expression += "*";
+                expression += buttons[13].getText();
                 text2.setText(expression);
                 text2.setSelection(expression.length());
                 last_equal = false;

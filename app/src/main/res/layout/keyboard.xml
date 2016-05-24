@@ -25,13 +25,13 @@
         android:id="@+id/divide"
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"
-        android:text="÷"
+        android:text="/"
         android:background="@drawable/keyboard" />
     <Button
         android:id="@+id/multiple"
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"
-        android:text="×"
+        android:text="*"
         android:background="@drawable/keyboard" />
 
     <Button
