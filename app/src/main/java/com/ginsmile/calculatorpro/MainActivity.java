@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
     private String expression = "";
     private boolean last_equal = false;//上一次的按键是否为等号
-    private EditText text1;//第一行，用来显示按过等号之后的完整表达式
-    private EditText text2;//第二行，用来显示表达式和结果
-    private static boolean isSimple = true;//当前是否是简易计算器
+
+    protected EditText text1;//第一行，用来显示按过等号之后的完整表达式
+    protected EditText text2;//第二行，用来显示表达式和结果
+    protected static boolean isSimple = true;//当前是否是简易计算器
 
     private View board;
     private View board2;
@@ -81,6 +82,25 @@ public class MainActivity extends AppCompatActivity {
         initScienceBoard(buttons2);//初始化科学计算器键盘
         board = (View)findViewById(R.id.board);
         board2 = (View)findViewById(R.id.board2);
+
+
+        if(savedInstanceState != null){
+            text1.setText(savedInstanceState.getString("text1"));
+            text2.setText(savedInstanceState.getString("text2"));
+            isSimple = savedInstanceState.getBoolean("isSimple");
+            Log.v("TAG==>","OKKOKOKO");
+        }
+    }
+
+
+    //活动被回收时，保存临时数据
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putString("text1", text1.getText().toString());
+        outState.putString("text2", text2.getText().toString());
+        outState.putBoolean("isSimple",isSimple);
+
     }
 
 
